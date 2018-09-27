@@ -1,5 +1,7 @@
 # 高雄旅遊資訊網 / kaohsiungTravel
 
+[展示頁面點這](https://gmwu185.github.io/kaohsiungTravel/)
+
 ## 1-前言與開發目標：
 ====================
 ### 1-1-樣版設計
