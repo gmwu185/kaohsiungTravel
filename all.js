@@ -288,7 +288,7 @@ select_location.addEventListener('change', function (e) {
   // console.log( locationVal );
   nowZone = this.value;
   console.log('this.value: ' + this.value);
-  nowZoneDataFunc(locationVal);
+  nowZoneDataFunc(nowZone);
   // 防止算點按的數值大於 pgNunCount() {cleckButNum} 的值，防呆直接設第一筆資料
   pgNunCount(nowData.length, 1, pgMaxVal);
   renderCards(nowData);
