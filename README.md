@@ -3,7 +3,7 @@
 [展示頁面點這](https://gmwu185.github.io/kaohsiungTravel/)
 
 ## 1-前言與開發目標：
-====================
+
 ### 1-1-樣版設計
 - 符合 HTML5 語意規則，結合偽元素處理成較精簡的架構。
 - 不使用 CSS 框架 (如：Bootstrap or Foundation)，直接使用手刻完成，並使用 SASS 了解與 LESS 與 SCSS 的共通與差異。
@@ -20,7 +20,7 @@
 
 
 ## 2-使用工具：
-======================
+
 - VS Code
 - Adobe Brackets
 - Prepros
@@ -51,7 +51,7 @@
 
 
 ## 3-SASS/CSS 預處理器 
-===============================
+
 ### 3-1-SASS 與 SCSS 、 LESS 的共通性
 - 可使用嵌套方式，以退位來分別。
 - 變數 SASS 與 SCSS 都是 $ ，而 LESS 是 @。
@@ -72,7 +72,7 @@
 
 
 ## 4-完成心得與總結
-=======================
+
 
 ### 4-1-對於開發版型與前端功能結合
 
@@ -107,7 +107,6 @@
 
 
 ## 5-相關資料
-=======================
 
 ### 素材來源
 - [高雄市政府資料開放](https://data.kcg.gov.tw/)
@@ -123,6 +122,6 @@
   - [codepen-最終作業-高雄旅遊資訊](https://codepen.io/picka/pen/LrLZbE)
 
 ### 其他
-- (js之滚动置顶效果)[https://my.oschina.net/cobish/blog/300626]
-- (javascript读取Json数据并分页显示，支持键盘和滚轮翻页)[http://www.aspxhome.com/javascript/skills/20101/122346.htm]
+- [js之滚动置顶效果](https://my.oschina.net/cobish/blog/300626)
+- [javascript读取Json数据并分页显示，支持键盘和滚轮翻页](http://www.aspxhome.com/javascript/skills/20101/122346.htm)
 
