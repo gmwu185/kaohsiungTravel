@@ -1,0 +1,312 @@
+@font-face 
+	font-family:'SF Pro TC';
+	font-style:normal;
+	font-weight:300;
+	src:local("PingFang TC"),local("PingFang HK"),local("PingFang SC"),local("Hiragino Sans GB"),local("Source Han Sans K"),local("Source Han Sans KR"),local("Source Han Sans"),local("Source Han Sans TW"),local("Source Han Sans SC"),local("Microsoft Jhenghei"),local("Microsoft Jhenghei"),local("Microsoft Jhenghei"),local("Microsoft Jhenghei"),local("Microsoft Yahei"),local("SimHei"),local("Wenquanyi Micro Hei"),local("ST Heiti"),local("WenQuanYi Zen Hei Sharp")
+
+/**
+ * 共用區塊
+ */
+* 
+  font-family: SF Pro TC, 微軟正黑體, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+html, body
+  height: 100%
+  width: 100%
+body
+  color: #000
+p
+  font-size: 14px
+a
+  text-decoration:none;
+  &:hover, &::hover, &:focus, &::focus
+    color: red
+/**
+ * /共用區塊
+ */
+
+/**
+ * 指定區塊
+ */
+#scroll
+  width: 24px;
+  height: 24px;
+  right: 3.5%
+  bottom: 195px;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  background-image: url(../img/btn_goTop.png)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: 100% auto
+  z-index: 999
+//  a
+//    display: inline-block
+//    width: 24px;
+//    height: 24px;
+header 
+  box-sizing: border-box;
+  height: 380px;
+  width: 100%;
+  /* background-color: #f24; */
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-image: url(https://hexschool.github.io/JavaScript_HomeWork/assets/the-urban-landscape-1698285.png);
+
+.header-inner
+  text-align: center
+  h1
+    color: #fff;
+    font-size: 40px
+    font-weight: normal
+    letter-spacing:4px
+    line-height: 100%;
+    padding-top: 89px
+    padding-bottom: 96px
+  #select_location
+    font-size: 18px
+    height: 48px
+    width: 100%
+    max-width: 452px
+    background: rgba(255, 255, 255, 0.70);
+    background-image: url("../img/icons_down.png");
+    background-repeat: no-repeat;
+    background-position: 98% center;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 3px solid #FFFFFF;
+    border-radius: 5px;
+    display: inline-block
+    option
+      font-size: 18px
+      padding:  5px 8px
+
+.container
+  padding-bottom: 50px;
+
+.btnBox
+  max-width: 800px
+  background: #FFFFFF
+  box-shadow: $pubicShadow
+  border-radius: 5px;
+  padding: 20px 26px
+  margin-left: auto
+  margin-right: auto
+  margin-top: -28px
+  margin-bottom: 54px
+  &::before,&:before
+    content: " ";
+    width: 24px
+    height: 24px
+    position: absolute
+    margin-left: auto
+    margin-right: auto
+    left: 0
+    right: 0
+    bottom: -72px;
+    background-color: #fff
+    background-image: url(../img/circle-with-a-down-arrow.png)
+    background-position: center
+    background-repeat: no-repeat
+  &::after,&:after
+    content: " ";
+    width: 100%;
+    max-width: 900px
+    height: 1px;
+    border-bottom: 2px dashed $BtnBGC04
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -60px;
+    right: 0;
+    left: 0;
+    z-index: -1
+  p
+    font-size: 18px
+    margin-bottom: 14px
+  .hitoBtn_Box
+    padding: 0 30px
+    .hitoBtn
+      padding-left: 0
+      padding-right: 0
+      list-style: none
+      display: inline-block
+      margin:3px 15px
+      a
+        display: inline-block
+        font-size: 20px
+        text-align: center
+        border-radius: 5px
+        color: #fff
+        padding-top: 8px
+        padding-bottom: 8px
+        cursor: pointer;
+        transition: 1s all
+        min-width: 130px
+        max-width: 97%
+        &:hover, &:focus
+          background-color: #333333
+          transition: 1s all
+    .hitoBtn01 > a
+      background-color: $BtnBGC01
+    .hitoBtn02 > a
+      background-color: $BtnBGC02
+    .hitoBtn03 > a
+      background-color: $BtnBGC03
+    .hitoBtn04 > a
+      background-color: $BtnBGC04
+      
+h2.datadTaitle
+  text-align: center
+  font-size: 36px
+  font-weight: normal
+  color: #8A82CC
+  margin-bottom: 24px
+  padding-top: 76px
+      
+.datadBox
+  /*padding-bottom: 40px*/
+  text-align: center
+  margin-bottom: 20px
+  li
+    margin-left: .7%
+    margin-right: .7%
+    list-style: none
+    display: inline-block
+    box-shadow: $pubicShadow
+    vertical-align: top
+    margin-bottom: 36px
+    &:hover
+      .locationCoverImg
+        background-size: 120%
+        transition: all .5s
+      .locationInfo
+        transition: all .5s
+        background-color: rgba(0,0,0,.05)
+    
+.locationCoverImg
+  height: 155px
+  background-position: center
+  background-repeat: no-repeat
+  background-size: 100% auto
+  position: relative
+  display: table
+  width: 100%
+  transition: all .5s
+  h3
+    width: 100%
+    color: #fff
+    font-weight: normal
+    font-size: 24px
+    bottom: 0
+    margin-bottom: 11px
+    display: table-row;
+    background-repeat: no-repeat
+    background-position: bottom
+    background-size: 100% 30%
+    background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.54) 100%)
+    
+    span
+      display: table-cell
+      vertical-align: bottom
+      padding-bottom: 14px
+      text-shadow: $pubicShadow
+    span:nth-child(1)
+      text-align: left
+      min-width: 70%
+      padding-left: 22px
+      padding-right: 5px
+    span:nth-child(2)
+      text-align: right
+      font-size: 16px
+      bottom: 0px
+      padding-left: 5px
+      padding-right: 24px
+    
+.locationInfo
+  padding-left: 23px
+  padding-right: 23px
+  padding-bottom: 20px
+  padding-top: 15px
+  position: relative
+  transition: all .5s
+  p
+    text-align: left
+    font-size: 16px
+    line-height: 130%
+    padding-top: 4px
+    padding-bottom: 4px
+    padding-left: 1.5em
+    min-height: 1em 
+    background-position: left 6px
+    background-repeat: no-repeat
+    background-size: auto 18px 
+  .time
+    background-image: url(../img/icons_clock.png)
+  .add
+    background-image: url(../img/icons_pin.png)
+  .tel
+    background-image: url(../img/icons_phone.png)
+  .visit
+    background-image: url(../img/icons_tag.png)
+    
+.pageLen
+  list-style: none
+  text-align: center
+  
+  .pageNum
+    display: inline-block
+    // margin-top: 20px
+    // margin-bottom: 50px
+    a
+      font-size: 14px
+      color: #4A4A4A
+      padding: 5px 10px
+      transition: all 0.5s
+      display: inline-block
+      &:hover, &:focus
+        color: $BtnBGC04
+        transition: all 0.5s
+    &.disable a
+        color: rgba(0,0,0,.5)
+        cursor: not-allowed;
+    &.now a
+      color: $BtnBGC04
+      transition: all 0.5s
+footer
+  font-family: AppleSystemUIFont;
+  text-align: center
+  background-color: $footerBGC
+  color: $fontColorFF
+  padding-top: 18px
+  padding-bottom: 18px
+  vertical-align: middle
+  width: 100%
+  &::after,&:after,
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+  p
+    font-size: 14px
+    display: inline-block;
+    vertical-align: middle
+    span:nth-child(1)
+      margin-bottom: 14px
+      display: block
+  a
+    transition: all 1s
+    color: $fontColorYel
+    &:hover, &:focus
+      transition: all 1s
+      color: #000
+/**
+ * /指定區塊
+ */
