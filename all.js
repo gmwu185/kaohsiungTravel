@@ -106,7 +106,7 @@ console.log('nowPgNum:' + nowPgNum);
 var cleckButNum;
 console.log('cleckButNum: '+cleckButNum);
 // 每個分頁最多幾筆資料
-var pgMaxVal = 6;
+var pgMaxVal = 8;
 var pgStart;
 /*----------  /頁碼變數  ----------*/
 
