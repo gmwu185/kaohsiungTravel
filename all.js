@@ -6,16 +6,17 @@ var allData="";
 var allDataRecord; // 對應資料路徑
 var allDataRecordLen;
 var nowData;
-var JsonUrl = 'https://data.kcg.gov.tw/api/action/datastore_search?resource_id=92290ee5-6e61-456f-80c0-249eae2fcc97';
+var JsonUrl = 'https://raw.githubusercontent.com/hexschool/KCGTravel/master/datastore_search.json';
+// var JsonUrl = './datastore_search.json';
 var xhr = new XMLHttpRequest(); 
 
 /*----------  xhr 使用 post true 與 .send() 方式戴入資料  ----------*/
-xhr.open('post', JsonUrl, true)
+xhr.open('get', JsonUrl, true)
 xhr.setRequestHeader('Content-type', 'application/json')
-xhr.send()
-//console.log(xhr)
+xhr.send(null)
+// console.log("xhr", xhr);
 xhr.onload = function() {
-  // console.log(xhr.status)
+  console.log(xhr.status)
   
   // console.log(JdataParse);
   if(xhr.status == 200){
