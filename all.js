@@ -8,11 +8,11 @@ var allDataRecordLen;
 var nowData;
 var JsonUrl = 'https://raw.githubusercontent.com/hexschool/KCGTravel/master/datastore_search.json';
 // var JsonUrl = './datastore_search.json';
-var xhr = new XMLHttpRequest(); 
 
 /*----------  xhr 使用 post true 與 .send() 方式戴入資料  ----------*/
+var xhr = new XMLHttpRequest(); 
 xhr.open('get', JsonUrl, true)
-xhr.setRequestHeader('Content-type', 'application/json')
+// xhr.setRequestHeader('Content-type', 'application/json')
 xhr.send(null)
 // console.log("xhr", xhr);
 xhr.onload = function() {
